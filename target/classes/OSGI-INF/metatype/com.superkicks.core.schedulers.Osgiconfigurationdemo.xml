@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.superkicks.core.schedulers.Osgiconfigurationdemo">
+  <OCD id="com.superkicks.core.schedulers.Osgiconfigurationdemo" name="Siva Schedular" description="This is my Test Scheduler">
+    <AD id="getSchedulerName" type="String" name="Scheduler Name" description="Name of Scheduler" default="Scheduler\ name"/>
+    <AD id="getCanRunConcurrent" type="Boolean" name="Can Run concurrently" description="If you want to run the scheduler to run concurrently" default="true"/>
+    <AD id="getCronExpression" type="String" name="Cron Expression " description="Enter Cron Expression" default="0\ *\ *\ ?\ *\ *"/>
+    <AD id="getEnabledScheduler" type="Boolean" name="Enable Scheudler" description="Scheduler is enabled / disabled" default="false"/>
+  </OCD>
+  <Designate pid="com.superkicks.core.schedulers.SchedulerDemo">
+    <Object ocdref="com.superkicks.core.schedulers.Osgiconfigurationdemo"/>
+  </Designate>
+</metatype:MetaData>

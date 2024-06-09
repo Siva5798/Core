@@ -1,0 +1,7 @@
+com\superkicks\core\models\HelloWorldModelTest.class
+com\superkicks\core\filters\LoggingFilterTest.class
+com\superkicks\core\servlets\SimpleServletTest.class
+com\superkicks\core\testcontext\AppAemContext.class
+com\superkicks\core\listeners\SimpleResourceListenerTest.class
+com\superkicks\core\testcontext\AppAemContext$1.class
+com\superkicks\core\schedulers\SimpleScheduledTaskTest.class

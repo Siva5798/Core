@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.superkicks.core.schedulers.SchedulerDemo" immediate="true" activate="init" deactivate="deactivate">
+  <property name="getSchedulerName" type="String" value="Scheduler name"/>
+  <property name="getCanRunConcurrent" type="Boolean" value="true"/>
+  <property name="getCronExpression" type="String" value="0 * * ? * *"/>
+  <property name="getEnabledScheduler" type="Boolean" value="false"/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <reference name="scheduler" interface="org.apache.sling.commons.scheduler.Scheduler" field="scheduler"/>
+  <implementation class="com.superkicks.core.schedulers.SchedulerDemo"/>
+</scr:component>

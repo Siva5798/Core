@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="serviceF" immediate="true" activate="activate">
+  <property name="service.ranking" type="Integer" value="1000"/>
+  <service>
+    <provide interface="com.superkicks.core.services.MySimpleService"/>
+  </service>
+  <implementation class="com.superkicks.core.services.impl.MySimpleServiceFirstImpl"/>
+</scr:component>
